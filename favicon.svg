@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="balloonCoral" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FF8A98"/>
+      <stop offset="60%" stop-color="#E03546"/>
+      <stop offset="100%" stop-color="#A51828"/>
+    </radialGradient>
+    <radialGradient id="balloonGold" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFEFA8"/>
+      <stop offset="60%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#997C19"/>
+    </radialGradient>
+    <radialGradient id="balloonPurple" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="60%" stop-color="#7E22CE"/>
+      <stop offset="100%" stop-color="#581C87"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ribbons / Strings -->
+  <path d="M22 36 Q 26 48 31 58" stroke="#D1D5DB" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M42 36 Q 38 48 33 58" stroke="#D1D5DB" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M32 34 Q 32 46 32 58" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Left Purple Balloon -->
+  <g filter="url(#shadow)">
+    <path d="M 22 14 C 13 14 10 24 12 30 C 14 36 20 38 22 38 C 24 38 30 36 32 30 C 34 24 31 14 22 14 Z" fill="url(#balloonPurple)"/>
+    <polygon points="20,38 24,38 22,41" fill="#7E22CE"/>
+    <ellipse cx="18" cy="22" rx="2.5" ry="5" transform="rotate(-25 18 22)" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+
+  <!-- Right Gold Balloon -->
+  <g filter="url(#shadow)">
+    <path d="M 42 14 C 33 14 30 24 32 30 C 34 36 40 38 42 38 C 44 38 50 36 52 30 C 54 24 51 14 42 14 Z" fill="url(#balloonGold)"/>
+    <polygon points="40,38 44,38 42,41" fill="#D4AF37"/>
+    <ellipse cx="38" cy="22" rx="2.5" ry="5" transform="rotate(-25 38 22)" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- Front Center Coral Balloon -->
+  <g filter="url(#shadow)">
+    <path d="M 32 8 C 21 8 18 20 20 28 C 22 35 29 37 32 37 C 35 37 42 35 44 28 C 46 20 43 8 32 8 Z" fill="url(#balloonCoral)"/>
+    <polygon points="30,37 34,37 32,40" fill="#E03546"/>
+    <!-- Specular highlight -->
+    <ellipse cx="27" cy="18" rx="3.5" ry="7" transform="rotate(-20 27 18)" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M49 8 L50 11 L53 12 L50 13 L49 16 L48 13 L45 12 L48 11 Z" fill="#FBBF24"/>
+  <path d="M12 10 L13 12 L15 13 L13 14 L12 16 L11 14 L9 13 L11 12 Z" fill="#F472B6"/>
+</svg>
+
